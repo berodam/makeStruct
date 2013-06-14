@@ -1,0 +1,5 @@
+A small function for adding hierarchical structure to any object
+
+Add a structure from the string 
+format 'a.b.c.d'
+
