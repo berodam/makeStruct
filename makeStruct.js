@@ -9,7 +9,7 @@ function addStruct(str, obj) {
         //build a string for current location
         currentLocation += ('["' + list.pop() + '"]');
 
-        //buil the string for evaluation
+        //build the string for evaluation
         var evalString = ('obj' + currentLocation + '={}');
 
         //put empty object at each new level
@@ -19,16 +19,10 @@ function addStruct(str, obj) {
 
 
 // Remove structure from an object
-//
-//
+// delete the node from the highest level
+
 function removeStruct(str, obj) {	
 	var list = str.split('.');
 	delete obj[list[0]];
-/*	while (list.length) {;
-		delete obj[list.pop()]
-		console.log(obj)
-	}
-*/
-	
-	
-}
+};
+
