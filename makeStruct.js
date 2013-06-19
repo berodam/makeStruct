@@ -16,3 +16,19 @@ function addStruct(str, obj) {
         eval(evalString);
     }
 }
+
+
+// Remove structure from an object
+//
+//
+function removeStruct(str, obj) {	
+	var list = str.split('.');
+	delete obj[list[0]];
+/*	while (list.length) {;
+		delete obj[list.pop()]
+		console.log(obj)
+	}
+*/
+	
+	
+}
